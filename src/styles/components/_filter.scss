@@ -1,0 +1,28 @@
+.filter {
+    display: flex;
+    background-color: var(--red-full);
+    padding: 1rem;
+
+    &__form {
+        display: flex;
+        width: 100%;
+
+        & input {
+            border-radius: 24px;
+            border: none;
+
+            &:first-child {
+                margin-right: 1rem;
+            }
+        }
+
+    }
+
+    &__inputtext {
+        width: 100%;
+        padding: 1rem;
+    }
+}
+.openFilter{
+    background-color: #333;
+}

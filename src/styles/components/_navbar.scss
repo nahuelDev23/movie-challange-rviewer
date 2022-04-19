@@ -1,0 +1,62 @@
+.nav {
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+
+    @media screen and (min-width: 640px) {
+        flex-direction: row;
+    }
+
+    &__actions,
+    &__login,
+    &__filters,
+    &__links,
+    &__left,
+    &__item {
+        align-items: center;
+        display: flex;
+
+    }
+
+    &__logo {
+        margin-right: 2rem;
+    }
+
+    &__links &__item {
+        padding: 1rem;
+    }
+
+    &__item > img {
+        margin-right: .5rem;
+    }
+
+    &__actions {
+        &>* {
+            max-height: 100%;
+            padding-left: 1rem;
+            padding-right: 1rem;
+        }
+    }
+
+    &__login {
+        &> :first-child {
+            margin-right: .5rem;
+        }
+    }
+
+    &__filters {
+        cursor: pointer;
+        padding: 1rem;
+        &>img {
+            margin-right: .5rem;
+        }
+    }
+
+
+}
+
+.active-link {
+    color: #fff;
+    background: var(--red-full);
+}
