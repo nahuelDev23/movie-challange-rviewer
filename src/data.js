@@ -1,4 +1,5 @@
 const data = [{
+  "total": 100,
   "entries": [
     {
       "title": "Wolf Creek",
@@ -1306,7 +1307,6 @@ const data = [{
 const api = {
   list: () => {
     let results = data;
-
     return new Promise((resolve) => resolve(results));
   },
 };

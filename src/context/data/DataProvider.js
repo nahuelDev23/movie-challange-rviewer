@@ -11,6 +11,20 @@ const INITIAL_DATA_STATE = {
 export const DataProvider = ({ children }) => {
   const [state, dispatch] = useReducer(dataReducer, INITIAL_DATA_STATE)
 
+  const onFilterDataByNameAndCategory = async(name, date,typeData='series') => {
+
+    const data = await api.list()
+    const filteredSeries = data[0].entries.filter(serie => serie.programType === typeData && serie.title.toLowerCase().includes(name.toLowerCase()) && serie.releaseYear  === date )
+    const typeForDispatch = typeData === 'series' ? 'SET_SERIES' : 'SET_MOVIES'
+
+    dispatch({
+      type: typeForDispatch,
+      payload: [...filteredSeries]
+
+    })
+
+  }
+
   const onLoadData = async (typeData) => {
 
     const data = await api.list()
@@ -33,7 +47,8 @@ export const DataProvider = ({ children }) => {
       ...state,
 
       //methods
-      onLoadData
+      onLoadData,
+      onFilterDataByNameAndCategory
 
     }}>
       {children}

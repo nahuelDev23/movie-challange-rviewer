@@ -9,3 +9,8 @@ fuente : https://create-react-app.dev/docs/adding-a-sass-stylesheet/
 # React-router-dom V6
 
 fuente: https://reactrouter.com/docs/en/v6/getting-started/installation
+
+#DATA PROVIDER onFilterDataByNameAndCategory
+
+lo hago asi y no en el api.onFilterDataByNameAndCategory porque si el dia de maniana pasan la data a una db
+hay q ponerse a codear nuevamente. nada  qver
