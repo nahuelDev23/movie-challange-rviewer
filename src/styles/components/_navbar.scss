@@ -44,8 +44,28 @@
     }
 
     &__login {
+        position: relative;
+        margin-right: 1rem;
+
         &> :first-child {
             margin-right: .5rem;
+        }
+
+        &:after,
+        &:before {
+            position: absolute;
+            content: '';
+            width: 1.5px;
+            height: 30px;
+            background-color: white;
+        }
+
+        &:after {
+            left: 0px;
+        }
+
+        &:before {
+            right: 0px;
         }
     }
 

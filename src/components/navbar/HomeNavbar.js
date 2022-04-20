@@ -10,10 +10,12 @@ export const HomeNavbar = () => {
                 <Link to='/'> <img src={logo} alt="Logo Dreadful Tomato" /></Link>
             </div>
             <div className='nav__actions'>
+           
                 <div className='nav__login'>
                     <p><Link to='#'>Login</Link></p>
                     <img src={login} alt="icono para el login" />
                 </div>
+                
                 <div className='nav__trial btn btn--active'>
                     <Link to='#'> Start your free trial</Link>
                 </div>
