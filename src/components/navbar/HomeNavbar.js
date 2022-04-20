@@ -7,7 +7,7 @@ export const HomeNavbar = () => {
     return (
         <nav className='nav'>
             <div className='nav__logo'>
-                <img src={logo} alt="Logo Dreadful Tomato" />
+                <Link to='/'> <img src={logo} alt="Logo Dreadful Tomato" /></Link>
             </div>
             <div className='nav__actions'>
                 <div className='nav__login'>

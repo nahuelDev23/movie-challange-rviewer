@@ -79,7 +79,6 @@
         display: flex;
         justify-content: center;
         margin-top: 3rem;
-
         &__list {
             display: flex;
             align-items: center;
@@ -107,15 +106,7 @@
         border: 0;
         color: white;
         font-size: 2rem;
-
-    }
-
-    &__pagination__prev::before {
-        content: '<';
-    }
-
-    &__pagination__next::before {
-        content: '>';
+        cursor: pointer;
     }
 }
 

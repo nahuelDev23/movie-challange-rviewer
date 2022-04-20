@@ -2,12 +2,17 @@ import React from 'react'
 import { Footer } from '../Footer'
 import { MainNavbar } from '../navbar/MainNavbar'
 
-export const MainLayout = ({children}) => {
+export const MainLayout = ({ children }) => {
   return (
-    <div className='container'>
-        <MainNavbar/>
+    <div >
+      <div className='nav__container'>
+        <MainNavbar />
+      </div>
+      <main className=' main-bg'>
         {children}
-        <Footer />
+      </main>
+
+      <Footer />
     </div>
   )
 }

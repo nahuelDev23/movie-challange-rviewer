@@ -29,10 +29,10 @@ const ActiveLink = ({ children, to, ...props }) => {
 export const MainNavbar = () => {
     const { toggleFilter, isOpenFilter } = useContext(UiContext)
     return (
-        <nav className='nav'>
+        <nav className='nav center-content'>
             <div className='nav__left'>
                 <div className='nav__logo'>
-                    <img src={logo} alt="Logo Dreadful Tomato" />
+                    <Link to='/'> <img src={logo} alt="Logo Dreadful Tomato" /></Link>
                 </div>
                 <div className='nav__links'>
                     <ActiveLink to='/movies'>
