@@ -14,7 +14,6 @@ export const Movies = () => {
           <h1 className='title'>Popular Movies</h1>
           <ProductList type='movie' />
         </div>
-
       </div>
 
     </MainLayout>

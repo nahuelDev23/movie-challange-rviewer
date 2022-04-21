@@ -1,0 +1,25 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Pruebas en <Movies/> Debe mostrar <Movies/> correctamente 1`] = `
+<MainLayout>
+  <Filter
+    category="movie"
+  />
+  <div
+    className="center-content"
+  >
+    <div
+      className="pt-4 pb-4"
+    >
+      <h1
+        className="title"
+      >
+        Popular Movies
+      </h1>
+      <ProductList
+        type="movie"
+      />
+    </div>
+  </div>
+</MainLayout>
+`;
