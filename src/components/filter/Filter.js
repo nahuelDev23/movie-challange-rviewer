@@ -16,10 +16,13 @@ export const Filter = ({ category = 'movies' }) => {
 
     useEffect(() => {
         onFilterDataByNameAndCategory(name, startDate.getFullYear(), category)
+
+        return () => { onFilterDataByNameAndCategory() }
     }, [name, category, startDate])
 
 
     const onChange = async ({ target }) => {
+        console.log('llamado desde el test')
         setName(target.value)
     }
     return (

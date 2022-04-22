@@ -1,0 +1,90 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Pruebas en <MainNavbar/> Debe mostrar <MainNavbar/> correctamente 1`] = `
+<nav
+  className="nav center-content"
+>
+  <div
+    className="nav__left"
+  >
+    <div
+      className="nav__logo"
+    >
+      <Link
+        to="/"
+      >
+         
+        <img
+          alt="Logo Dreadful Tomato"
+          src="logo.png"
+        />
+      </Link>
+    </div>
+    <div
+      className="nav__links"
+    >
+      <ActiveLink
+        to="/movies"
+      >
+        <img
+          alt="icon_movies"
+          src="icon-movies.png"
+        />
+        <p>
+          Movies
+        </p>
+      </ActiveLink>
+      <ActiveLink
+        to="/series"
+      >
+        <img
+          alt="icon_series"
+          src="icon-series.png"
+        />
+        <p>
+          Series
+        </p>
+      </ActiveLink>
+    </div>
+  </div>
+  <div
+    className="nav__actions"
+  >
+    <div
+      className="nav__filters undefined "
+    >
+      <img
+        alt="Icon filter"
+        src="icon-filter.png"
+      />
+      <p>
+        filters
+      </p>
+    </div>
+    <div
+      className="nav__login"
+    >
+      <p>
+        <Link
+          to="#"
+        >
+          Login
+        </Link>
+      </p>
+      <img
+        alt="icono para el login"
+        src="icon-login.png"
+      />
+    </div>
+    <div
+      className="nav__trial btn btn--active"
+    >
+      <Link
+        to="#"
+      >
+         Start your free trial
+      </Link>
+    </div>
+  </div>
+</nav>
+`;

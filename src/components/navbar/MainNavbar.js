@@ -36,11 +36,11 @@ export const MainNavbar = () => {
                 </div>
                 <div className='nav__links'>
                     <ActiveLink to='/movies'>
-                        <img src={movies} alt="" />
+                        <img src={movies} alt="icon_movies" />
                         <p>Movies</p>
                     </ActiveLink>
                     <ActiveLink to='/series'>
-                        <img src={series} alt="" />
+                        <img src={series} alt="icon_series" />
                         <p>Series</p>
                     </ActiveLink>
                 </div>

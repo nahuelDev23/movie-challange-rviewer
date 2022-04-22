@@ -1,0 +1,49 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Pruebas en <HomeNavbar/> Debe mostrar <HomeNavbar/> correctamente 1`] = `
+<nav
+  className="nav"
+>
+  <div
+    className="nav__logo"
+  >
+    <Link
+      to="/"
+    >
+       
+      <img
+        alt="Logo Dreadful Tomato"
+        src="logo.png"
+      />
+    </Link>
+  </div>
+  <div
+    className="nav__actions"
+  >
+    <div
+      className="nav__login"
+    >
+      <p>
+        <Link
+          to="#"
+        >
+          Login
+        </Link>
+      </p>
+      <img
+        alt="icono para el login"
+        src="icon-login.png"
+      />
+    </div>
+    <div
+      className="nav__trial btn btn--active"
+    >
+      <Link
+        to="#"
+      >
+         Start your free trial
+      </Link>
+    </div>
+  </div>
+</nav>
+`;

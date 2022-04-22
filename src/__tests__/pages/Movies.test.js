@@ -14,6 +14,12 @@ describe('Pruebas en <Movies/>', () => {
         expect(MainLayout).toBeTruthy();
     })
 
+    test('Debe Contener el componente Filter con la propiedad movie', () => {
+        const wrapper = shallow(<Movies />);
+        const Filter = wrapper.find('Filter');
+        expect(Filter.props().category).toBe('movie');
+    })
+
     test('Debe Contener el titulo Popular Movies', () => {
         const wrapper = shallow(<Movies />);
 
