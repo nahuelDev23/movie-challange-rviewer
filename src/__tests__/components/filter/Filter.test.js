@@ -39,9 +39,6 @@ describe('Pruebas en <Filter/>', () => {
         const inputText = wrapper.find('input')
         inputText.simulate('change', { target: { value: 'Iron' } })
 
-
     })
-
-  
 
 })
