@@ -25,7 +25,7 @@ export const DataProvider = ({ children }) => {
 
   },[])
 
-  const onLoadData = async (typeData) => {
+  const onLoadData = useCallback(async (typeData) => {
 
     const data = await api.list()
 
@@ -39,7 +39,7 @@ export const DataProvider = ({ children }) => {
 
     })
 
-  }
+  },[])
 
 
   return (

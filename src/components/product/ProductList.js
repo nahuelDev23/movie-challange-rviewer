@@ -17,7 +17,7 @@ export const ProductList = ({ type }) => {
 
   useEffect(() => {
     onLoadData(type)
-  }, [])
+  }, [onLoadData, type])
 
   return (
     <div className='product'>

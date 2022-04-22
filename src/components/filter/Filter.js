@@ -18,14 +18,14 @@ export const Filter = ({ category = 'movies' }) => {
         onFilterDataByNameAndCategory(name, startDate.getFullYear(), category)
 
         return () => { onFilterDataByNameAndCategory() }
-        
-    }, [name, category, startDate,onFilterDataByNameAndCategory])
+
+    }, [name, category, startDate, onFilterDataByNameAndCategory])
 
 
     const onChange = async ({ target }) => {
-        console.log('llamado desde el test')
         setName(target.value)
     }
+
     return (
         <div className='bg-primary'>
             <>
@@ -34,6 +34,7 @@ export const Filter = ({ category = 'movies' }) => {
                         <div className='filter center-content'>
 
                             <div className='filter__grouptext'>
+
                                 <div className='filter__icon'>
                                     <SearchOutlinedIcon sx={{ fontSize: '2rem' }} />
                                 </div>

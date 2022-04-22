@@ -1,6 +1,6 @@
 import { useState,useEffect } from "react";
 
-export const usePaginate = (data,itemsPerPage) => {
+export const usePaginate = (data,itemsPerPage=10) => {
     const [currentPage, setCurrentPage] = useState(1);
     const [currentData, setCurrentData] = useState([]);
     const [totalPages, setTotalPages] = useState(0);
