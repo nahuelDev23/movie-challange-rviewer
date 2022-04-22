@@ -1,4 +1,4 @@
-import React, { useReducer } from 'react'
+import React, { useCallback, useReducer } from 'react'
 import api from '../../data'
 import { DataContext } from './DataContext'
 import { dataReducer } from './dataReducer'
@@ -11,7 +11,7 @@ const INITIAL_DATA_STATE = {
 export const DataProvider = ({ children }) => {
   const [state, dispatch] = useReducer(dataReducer, INITIAL_DATA_STATE)
 
-  const onFilterDataByNameAndCategory = async(name, date,typeData='series') => {
+  const onFilterDataByNameAndCategory = useCallback(async(name, date,typeData='series') => {
 
     const data = await api.list()
     const filteredSeries = data[0].entries.filter(serie => serie.programType === typeData && serie.title.toLowerCase().includes(name.toLowerCase()) && serie.releaseYear  === date )
@@ -23,7 +23,7 @@ export const DataProvider = ({ children }) => {
 
     })
 
-  }
+  },[])
 
   const onLoadData = async (typeData) => {
 

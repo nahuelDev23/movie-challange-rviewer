@@ -18,7 +18,8 @@ export const Filter = ({ category = 'movies' }) => {
         onFilterDataByNameAndCategory(name, startDate.getFullYear(), category)
 
         return () => { onFilterDataByNameAndCategory() }
-    }, [name, category, startDate])
+        
+    }, [name, category, startDate,onFilterDataByNameAndCategory])
 
 
     const onChange = async ({ target }) => {
